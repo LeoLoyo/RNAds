@@ -1,11 +1,8 @@
 package com.reactlibrary;
 
-import android.widget.RelativeLayout;
 
 import com.facebook.react.bridge.ReactContext;
-import com.facebook.react.bridge.ReadableMap;
 import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 import java.util.HashMap;
 

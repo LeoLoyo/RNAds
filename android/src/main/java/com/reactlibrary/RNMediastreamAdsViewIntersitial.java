@@ -5,15 +5,13 @@ import android.widget.RelativeLayout;
 
 import com.facebook.react.bridge.ReactContext;
 import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.doubleclick.PublisherAdView;
 import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
 
 import java.util.HashMap;
 
 public class RNMediastreamAdsViewIntersitial {
     static public PublisherInterstitialAd setup(ReactContext mReactContext, String id) {
-        PublisherInterstitialAd adView = new PublisherInterstitialAd(mReactContext);
+        final PublisherInterstitialAd adView = new PublisherInterstitialAd(mReactContext);
         adView.setAdUnitId(id);
         adView.setAdListener(new AdListener() {
             @Override

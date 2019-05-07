@@ -6,7 +6,6 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReadableMap;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
 import com.reactlibrary.R;
 
@@ -16,7 +15,7 @@ public class RNMediastreamAdsView extends RelativeLayout {
     public RNMediastreamAdsView(ReactContext reactContext) {
         super(reactContext);
         mReactContext = reactContext;
-        inflate(mReactContext, R.layout.main_activity, this);
+        /*inflate(mReactContext, R.layout.main_activity, this);*/
     }
 
     public void setConfig(ReadableMap config) {
