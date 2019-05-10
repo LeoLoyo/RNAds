@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A02A47A228633D8003BB1DE /* RNMediastreamAdsViewIntersitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02A474228633D8003BB1DE /* RNMediastreamAdsViewIntersitial.swift */; };
+		0A02A47B228633D8003BB1DE /* RNMediastreamAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02A475228633D8003BB1DE /* RNMediastreamAdsView.swift */; };
+		0A02A47C228633D8003BB1DE /* RNMediastreamAdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02A477228633D8003BB1DE /* RNMediastreamAdsManager.swift */; };
+		0A02A47D228633D8003BB1DE /* RNMediastreamAdsViewBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02A478228633D8003BB1DE /* RNMediastreamAdsViewBanner.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* RNMediastreamAds.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNMediastreamAds.m */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A02A473228633D7003BB1DE /* RNMediastreamAds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNMediastreamAds-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A02A474228633D8003BB1DE /* RNMediastreamAdsViewIntersitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMediastreamAdsViewIntersitial.swift; sourceTree = "<group>"; };
+		0A02A475228633D8003BB1DE /* RNMediastreamAdsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMediastreamAdsView.swift; sourceTree = "<group>"; };
+		0A02A476228633D8003BB1DE /* RNMediastreamAds-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNMediastreamAds-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A02A477228633D8003BB1DE /* RNMediastreamAdsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMediastreamAdsManager.swift; sourceTree = "<group>"; };
+		0A02A478228633D8003BB1DE /* RNMediastreamAdsViewBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMediastreamAdsViewBanner.swift; sourceTree = "<group>"; };
+		0A02A479228633D8003BB1DE /* RNMediastreamAds.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = RNMediastreamAds.xcworkspace; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNMediastreamAds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNMediastreamAds.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNMediastreamAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNMediastreamAds.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNMediastreamAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNMediastreamAds.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,9 +60,15 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNMediastreamAds.h */,
+				0A02A476228633D8003BB1DE /* RNMediastreamAds-Bridging-Header.h */,
+				0A02A479228633D8003BB1DE /* RNMediastreamAds.xcworkspace */,
+				0A02A477228633D8003BB1DE /* RNMediastreamAdsManager.swift */,
+				0A02A475228633D8003BB1DE /* RNMediastreamAdsView.swift */,
+				0A02A478228633D8003BB1DE /* RNMediastreamAdsViewBanner.swift */,
+				0A02A474228633D8003BB1DE /* RNMediastreamAdsViewIntersitial.swift */,
 				B3E7B5891CC2AC0600A0062D /* RNMediastreamAds.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				0A02A473228633D7003BB1DE /* RNMediastreamAds-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +103,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -113,6 +130,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNMediastreamAds.m in Sources */,
+				0A02A47B228633D8003BB1DE /* RNMediastreamAdsView.swift in Sources */,
+				0A02A47A228633D8003BB1DE /* RNMediastreamAdsViewIntersitial.swift in Sources */,
+				0A02A47C228633D8003BB1DE /* RNMediastreamAdsManager.swift in Sources */,
+				0A02A47D228633D8003BB1DE /* RNMediastreamAdsViewBanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,32 +224,45 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../../ios/Pods/Google-Mobile-Ads-SDK/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNMediastreamAds;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNMediastreamAds-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../../ios/Pods/Google-Mobile-Ads-SDK/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNMediastreamAds;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNMediastreamAds-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 			};
 			name = Release;
 		};
