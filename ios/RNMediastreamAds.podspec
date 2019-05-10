@@ -3,9 +3,7 @@ Pod::Spec.new do |s|
   s.name         = "RNMediastreamAds"
   s.version      = "1.0.0"
   s.summary      = "RNMediastreamAds"
-  s.description  = <<-DESC
-                  RNMediastreamAds
-                   DESC
+  s.description  = ""
   s.homepage     = ""
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
