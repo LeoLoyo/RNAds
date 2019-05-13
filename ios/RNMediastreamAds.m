@@ -1,13 +1,33 @@
+//  Created by react-native-create-bridge
 
-#import "RNMediastreamAds.h"
+// import RCTViewManager
+#if __has_include(<React/RCTViewManager.h>)
+#import <React/RCTViewManager.h>
+#elif __has_include(“RCTViewManager.h”)
+#import “RCTViewManager.h”
+#else
+#import “React/RCTViewManager.h” // Required when used as a Pod in a Swift project
+#endif
 
-@implementation RNMediastreamAds
+// import RCTEventDispatcher
+#if __has_include(<React/RCTEventDispatcher.h>)
+#import <React/RCTEventDispatcher.h>
+#elif __has_include(“RCTEventDispatcher.h”)
+#import “RCTEventDispatcher.h”
+#else
+#import “React/RCTEventDispatcher.h” // Required when used as a Pod in a Swift project
+#endif
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
-RCT_EXPORT_MODULE()
+// Export a native module
+// https://facebook.github.io/react-native/docs/native-modules-ios.html#exporting-swift
+@interface RCT_EXTERN_MODULE(RNMediastreamAds, RCTViewManager)
+
+// Map native properties to React Component props
+// https://facebook.github.io/react-native/docs/native-components-ios.html#properties
+RCT_EXPORT_VIEW_PROPERTY(config, NSDictionary)
+
+// Export methods to a native module
+// https://facebook.github.io/react-native/docs/native-modules-ios.html#exporting-swift
+RCT_EXTERN_METHOD(exampleMethod)
 
 @end
-  
